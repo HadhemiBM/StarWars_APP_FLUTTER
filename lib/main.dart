@@ -387,7 +387,8 @@ class MainApp extends StatelessWidget {
       create: (context) => FilmsProvider(),
       child: MaterialApp(
           home: Scaffold(
-        body: Padding(
+        // resizeToAvoidBottomInset: false,
+        body: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0), // Add padding here
           child: FutureBuilder<List<Film>>(
             future: fetchFilms(),
@@ -448,6 +449,7 @@ class FilmsList extends StatelessWidget {
           ),
           Expanded(
             child: ListView.separated(
+              shrinkWrap: true,
               itemCount: films.length,
               itemBuilder: (context, index) {
                 Film film = films[index];
