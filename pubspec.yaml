@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   http: 1.1.0
+  provider:
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +23,4 @@ flutter:
     - assets/image/conan.jpg
     - assets/image/simba.jpg
     - assets/image/sonic.jpg
+    - assets/image/logo.png

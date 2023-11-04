@@ -7,14 +7,15 @@ class Film {
   final String created;
   final String edited;
 
-  Film(
-      {required this.title,
-      required this.director,
-      required this.description,
-      required this.releasedate,
-      required this.edited,
-      required this.created,
-      required this.producer});
+  Film({
+    required this.title,
+    required this.director,
+    required this.description,
+    required this.releasedate,
+    required this.edited,
+    required this.created,
+    required this.producer,
+  });
 
   factory Film.fromJson(Map<String, dynamic> json) {
     return Film(
