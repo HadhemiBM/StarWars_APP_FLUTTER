@@ -10,7 +10,19 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(film.title),
+        title: Text(
+          film.title,
+          style: const TextStyle(
+            color: Colors.black,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        //icpn color
+        iconTheme: const IconThemeData(
+          color: Color.fromARGB(255, 7, 103, 228),
+        ),
+        //add text
       ),
       body: SingleChildScrollView(
         child: Column(
